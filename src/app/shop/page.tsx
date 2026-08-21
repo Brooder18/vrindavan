@@ -806,14 +806,11 @@ function ProductCard({
           </div>
         </div>
 
-        {/* Add to cart */}
-        <button
+{/* Add to cart */}
+<button
   type="button"
   onPointerDown={(e) => {
     e.preventDefault();
-    onAddToCart(product, selectedWeight);
-  }}
-  onClick={() => {
     onAddToCart(product, selectedWeight);
   }}
   className="relative z-30 mt-5 w-full rounded-xl bg-[#f6c453] px-5 py-3 font-bold text-[#2d160d] transition hover:bg-[#e7b43b] active:scale-[0.98]"
